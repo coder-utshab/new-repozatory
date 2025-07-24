@@ -1,0 +1,25 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 15px 30px;
+border-bottom: 1px dotted #ccc;
+}
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.shomitro{
+   margin-top: 130px;
+   margin-left: 100px;
+   text-align: left;
+   max-width: 600px;
+}
