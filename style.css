@@ -1,25 +1,53 @@
-body{
-    font-family: Arial,sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-padding: 15px 30px;
-border-bottom: 1px dotted #ccc;
+    padding: 15px 30px;
+    border-bottom: 1px dotted #ccc;
 }
-nav a{
+
+nav a {
     margin: 0 10px;
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
 
-.shomitro{
-   margin-top: 130px;
-   margin-left: 100px;
-   text-align: left;
-   max-width: 600px;
+.shomitro {
+    margin-top: 130px;
+    margin-left: 100px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.right img {
+    margin-right: 100px;
+    width: 280px;
+    border-radius: 50px;
+    margin-top: 0;
+    border-radius: 50%;
+    /* Gol korar jonno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Halka shadow */
+}
+
+.kumar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    /* Padding added for spacing */
 }
