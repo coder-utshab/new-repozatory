@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
+        font-family: sans-serif;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
     padding: 0;
 }
 
@@ -42,6 +42,7 @@ nav a {
     /* Gol korar jonno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /* Halka shadow */
+    
 }
 
 .kumar {
@@ -49,5 +50,20 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
+    left: 20px;
     /* Padding added for spacing */
+   
+}
+
+.secoend-div {
+  margin-top: 130px;
+}
+
+.design {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-top: 20px;
+  margin-top: 210px;
 }
