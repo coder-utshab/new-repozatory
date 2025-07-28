@@ -1,14 +1,13 @@
+/* ----------- Base Styles ----------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        font-family: sans-serif;
-    }
+    font-family: sans-serif;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -16,12 +15,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    border-bottom: 1px dotted #ccc
+    border-bottom: 1px dotted #ccc;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
 
 nav a {
-    margin: 0 10px;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -34,26 +36,20 @@ nav a {
     max-width: 600px;
 }
 
-.ontor{
+.ontor {
     color: #ccc;
     background-color: #ec407a;
     padding: 12px 24px;
     border-radius: 30px;
     font-size: 15px;
     margin-top: 30px;
-
-
 }
+
 .right img {
     margin-right: 100px;
     width: 280px;
-    border-radius: 50px;
-    margin-top: 0;
     border-radius: 50%;
-    /* Gol korar jonno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Halka shadow */
-    
 }
 
 .kumar {
@@ -61,58 +57,52 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
-    left: 20px;
-    /* Padding added for spacing */
-   
-}
-
-.secoend-div {
-  margin-top: 130px;
 }
 
 .design {
-display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  margin-top: 20px;
-  margin-top: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 210px;
 }
-
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 column fixed */
+    grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     max-width: 1100px;
-    margin: 100px auto; /* Center horizontally */
-    padding: 0 20px; /* Responsive spacing */
+    margin: 100px auto;
+    padding: 0 20px;
 }
 
-.card{
+.card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); green, blue, alpha);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
 }
-.card h3{
+
+.card h3 {
     margin: 10px 0 5px;
 }
-.card .price{
+
+.card .price {
     font-weight: bold;
     color: #333;
 }
-.card .rating{
+
+.card .rating {
     color: orange;
     font-weight: bold;
 }
-
 
 .feature-section {
     display: flex;
@@ -120,55 +110,47 @@ display: flex;
     justify-content: center;
     padding: 50px;
     gap: 150px;
-
-    
 }
 
-
-.feature-image img{
+.feature-image img {
     max-width: 500px;
     border-radius: 10px;
-
 }
 
-.feature-content{
-   max-width: 500px;
-   text-align: left;
-
+.feature-content {
+    max-width: 500px;
+    text-align: left;
 }
-.feature-content h1{
+
+.feature-content h1 {
     font-size: 32px;
-    font-weight: 700px;
+    font-weight: 700;
     margin-bottom: 20px;
-
 }
-.feature-content p{
+
+.feature-content p {
     color: #444;
     font-size: 16px;
     margin-bottom: 20px;
-
 }
-.join-btn{
+
+.join-btn {
     display: inline-block;
     padding: 12px 25px;
     background-color: #f83f88;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-
 }
 
-
-
 footer {
-   background-color: #2a052e;
+    background-color: #2a052e;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
-    border-radius: 10px; /* 4 corner halka bakano */
-     max-width: 1400px;     /* Box ta chhoto korar jonno */
-    margin: 0 auto;       /* Center e rakhte */
-    
+    border-radius: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .footer-section {
@@ -195,13 +177,120 @@ footer {
 }
 
 .studio img {
-    width: 30px;   /* icon choto kore */
+    width: 30px;
     height: 30px;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .studio img:hover {
-    transform: scale(1.2); /* hover korle icon boro hoye jabe */
+    transform: scale(1.2);
 }
 
+/* ---------- Responsive Media Queries ----------- */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+    .kumar {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .shomitro {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .right img {
+        margin: 30px auto;
+        width: 200px;
+    }
+
+    .design {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 100px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .feature-section {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 20px;
+    }
+
+    .feature-content,
+    .feature-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .feature-content h1 {
+        font-size: 24px;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 8px 12px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        width: 100px;
+        text-align: center;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .right img {
+        width: 180px;
+    }
+
+    .ontor {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .studio {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .studio img {
+        width: 24px;
+        height: 24px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
